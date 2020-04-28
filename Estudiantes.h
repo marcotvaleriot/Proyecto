@@ -5,6 +5,7 @@
 #include <string>
 #include <sstream>
 
+#include "PersonaTec.h"
 
 using namespace std;
 
