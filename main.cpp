@@ -2,7 +2,6 @@
 
 using namespace std;
 
-#include "personatec.h"
 #include "estudiantes.h
 #include "profesores.h"
 #include "mate.h"
