@@ -6,6 +6,7 @@
 #include <sstream>
 
 #include "PersonaTec.h"
+#include "Mate.h"
 
 using namespace std;
 
