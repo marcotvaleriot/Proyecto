@@ -40,7 +40,7 @@ class Estudiantes: public PersonaTec{ //Creamos la clase de estudiantes y le hac
         }
         void printInfo (){ //Una funcion que saca toda la informacion junta
             cout << nom << ", " << age << ", " << ofi << ", matricula " << mat << ", " << ave << ", semestre " << sem;
-            hog.getInfo(); //La funcion de residencia la aplicamos aqui
+            hog.getInfo(); //Reescribimos la funcion de residencia, y le agregamos la nueva informacion de esta clase
         }
 };
 #endif // ESTUDIANTES_H
