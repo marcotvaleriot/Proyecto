@@ -16,12 +16,13 @@ class PersonaTec{
         int age;
         string nom;
         Residencia hog;
+    
         PersonaTec (int edad, string oficio, string nombre, Residencia hogar){//Constructor
             age = edad;
             ofi = oficio;
             nom = nombre;
             hog = hogar;
-        }
+        } //Getters
         int getAge(){
             return age;
         }
@@ -30,7 +31,7 @@ class PersonaTec{
         }
         string getNom(){
             return nom;
-        }
+        } //Setters
         void setOfi(string o){
             ofi = o;
         }
@@ -39,10 +40,10 @@ class PersonaTec{
         }
         void setNom(string n){
             nom = n;
-        }
+        } //Una funcion para conseguir toda la informacion de nuestro objeto
         void printInfo (){
             cout << nom << ", " << age << ", " << ofi << ", ";
-            hog.getInfo();
+            hog.getInfo(); //La funcion agregada de residencia
         }
 };
 #endif // PERSONATEC_H_
