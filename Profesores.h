@@ -14,11 +14,12 @@ class Profesores: public PersonaTec{
         string are;
         int sala;
     public://Metodos
-        Profesores (int edad, string nombre, string tipo, string area, int salario, Residencia hogar): PersonaTec(edad, "Profesor", nombre, hogar){//Constructor
+        Profesores (int edad, string nombre, string tipo, string area, int salario, Residencia hogar):  //El constructor
+        PersonaTec(edad, "Profesor", nombre, hogar){ //Los objetos heredados de personatec
             tip = tipo;
             are = area;
             sala = salario;
-        }
+        } //Getters
         string getTip(){
             return tip;
         }
@@ -27,7 +28,7 @@ class Profesores: public PersonaTec{
         }
         int getSala(){
             return sala;
-        }
+        } //Setters
         void setTip(string t){
             tip = t;
         }
@@ -36,7 +37,7 @@ class Profesores: public PersonaTec{
         }
         void setArea (string a){
             are = a;
-        }
+        } //La funcion heredada la reescribimos con los objetos que aplican a profesores
         void printInfo (){
             cout << nom << ", " << age << ", " << ofi << ", " << tip << ", " << are << ", " << sala;
             hog.getInfo();
