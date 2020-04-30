@@ -1,5 +1,5 @@
-#ifndef ESTUDIANTES_H_
-#define ESTUDIANTES_H_
+#ifndef ESTUDIANTES_H
+#define ESTUDIANTES_H
 
 #include <iostream>
 #include <string>
@@ -43,3 +43,4 @@ class Estudiantes: public PersonaTec{
             hog.getInfo();
         }
 };
+#endif // ESTUDIANTES_H
