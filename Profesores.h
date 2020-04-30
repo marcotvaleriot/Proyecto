@@ -1,13 +1,12 @@
-#ifndef PROFESORES_H_
-#define PROFESORES_H_
+#ifndef PROFESORES_H
+#define PROFESORES_H
 
 #include <iostream>
 #include <string>
 #include <sstream>
 
 #include "PersonaTec.h"
-
-using namespace std;
+#include "Residencia.h"
 
 class Profesores: public PersonaTec{
     private://Atributos
@@ -15,7 +14,7 @@ class Profesores: public PersonaTec{
         string are;
         int sala;
     public://Metodos
-        Profesores (int edad, string nombre, string tipo, string area, int salario): PersonaTec(edad, "Profesor", nombre){//Constructor
+        Profesores (int edad, string nombre, string tipo, string area, int salario, Residencia hogar): PersonaTec(edad, "Profesor", nombre, hogar){//Constructor
             tip = tipo;
             are = area;
             sala = salario;
@@ -35,4 +34,12 @@ class Profesores: public PersonaTec{
         void setSala(int s){
             sala = s;
         }
+        void setArea (string a){
+            are = a;
+        }
+        void printInfo (){
+            cout << nom << ", " << age << ", " << ofi << ", " << tip << ", " << are << ", " << sala;
+            hog.getInfo();
+        }
 };
+#endif //PROFESORES_H
