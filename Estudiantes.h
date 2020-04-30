@@ -6,18 +6,16 @@
 #include <sstream>
 
 #include "PersonaTec.h"
-#include "Mate.h"
-
-using namespace std;
+#include "Residencia.h"
 
 class Estudiantes: public PersonaTec{
     private://Atributos
         string mat;
         string ave;
         int sem;
-        Materia mate;
     public://Metodos
-        Estudiantes (int edad, string nombre, string matricula, string avenida, int semestre): PersonaTec(edad, "Estudiante", nombre){ //Constructor
+        Estudiantes (int edad, string nombre, string matricula, string avenida, int semestre, Residencia hogar):
+        PersonaTec(edad, "Estudiante", nombre, hogar){ //Constructor
             mat = matricula;
             ave = avenida;
             sem = semestre;
@@ -37,12 +35,11 @@ class Estudiantes: public PersonaTec{
         void setAve(string a){
             ave = a;
         }
-        void setMate(Materia p){
-            mate = p;
+        void setMat (string m){
+            mat = m;
         }
-        void ponMate(string n, string c, string t){
-            mate.setNombre(n);
-            mate.setCodigo(c);
-            mate.setTipo(t);
+        void printInfo (){
+            cout << nom << ", " << age << ", " << ofi << ", matricula " << mat << ", " << ave << ", semestre " << sem;
+            hog.getInfo();
         }
 };
