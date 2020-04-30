@@ -1,5 +1,5 @@
-#ifndef PERSONATEC_H_
-#define PERSONATEC_H_
+#ifndef PERSONATEC_H
+#define PERSONATEC_H
 
 #include <string>
 #include <iostream>
